@@ -1,0 +1,555 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F7F4EE;
+  color: #2F3A32;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 25px;
+}
+
+section {
+  margin-bottom: 100px;
+}
+
+.hero {
+  min-height: 100vh;
+  background-color: #E7EDE3;
+  border-radius: 24px;
+ padding: 300px 80px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.hero h1 {
+  font-size: 60px;
+  margin: 12px 0;
+}
+
+.hero p {
+  max-width: 620px;
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.hero-buttons {
+ display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 25px;
+}
+
+.hero-buttons a {
+   display: inline-block;
+  padding: 12px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.hero-buttons a + a {
+  background-color: transparent;
+  border: 1px solid #8FA77C;
+  color: #526346;
+}
+
+.hero-buttons a:hover {
+  background-color: #6F875D;
+  color: white;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 14px;
+}
+
+#about {
+  max-width: 760px;
+}
+
+#about p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #667068;
+}
+
+#skills ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 25px;
+}
+
+#skills li {
+  background-color: white;
+  border: 1px solid #D7E0D1;
+  border-radius: 14px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  box-shadow: 0 5px 15px rgba(47, 58, 50, 0.06);
+}
+
+#skills li strong {
+  color: #526346;
+  font-size: 21px;
+}
+
+#skills li span {
+  color: #667068;
+  font-size: 15px;
+}
+
+.section-label,
+.eyebrow {
+  color: #6F875D;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.projects-description {
+  max-width: 550px;
+  color: #667068;
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.project-card {
+  background-color: white;
+  border: 1px solid #D7E0D1;
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 6px 18px rgba(47, 58, 50, 0.08);
+}
+
+.project-card h3 {
+  font-size: 26px;
+  margin-bottom: 14px;
+}
+
+.project-card p {
+  color: #667068;
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+
+.project-card a {
+  display: inline-block;
+  background-color: #8FA77C;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.contact {
+  background-color: #E7EDE3;
+  border-radius: 20px;
+  padding: 45px;
+  text-align: center;
+}
+
+.contact p {
+  color: #667068;
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact-links a {
+  color: #2F3A32;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid #8FA77C;
+  padding-bottom: 4px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  color: #667068;
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  main {
+    padding: 20px;
+  }
+
+  section {
+    margin-bottom: 70px;
+  }
+
+  .hero {
+    min-height: 90vh;
+    padding: 170px 30px 50px;
+    border-radius: 18px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  #skills ul {
+    grid-template-columns: 1fr;
+  }
+
+  .contact,
+  .project-card {
+    padding: 28px;
+  }
+
+  .contact-links {
+    flex-wrap: wrap;
+  }
+}
+.assignments-description {
+  color: #667068;
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+.upload-box {
+  background-color: #E7EDE3;
+    border: 2px dashed #8FA77C;
+    border-radius: 20px;
+    padding: 35px 20px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.upload-button {
+  display: inline-block;
+    background-color: #244C34;
+    color: white;
+    padding: 13px 22px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.upload-button:hover {
+    background-color: #62804F;
+    transform: translateY(-2px);
+}
+.upload-box p {
+    margin-top: 15px;
+    color: #667068;
+    font-size: 14px;
+}
+
+.assignments-list {
+    display: grid;
+    gap: 14px;
+}
+
+.assignment-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: white;
+    border: 1px solid #DCE4D6;
+    border-radius: 14px;
+    padding: 18px;
+    overflow-wrap: anywhere;
+}
+
+.assignment-icon {
+    font-size: 28px;
+}
+
+.assignment-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.assignment-info h3 {
+    font-size: 16px;
+    color: #244C34;
+    overflow-wrap: anywhere;
+}
+
+.assignment-info p {
+    font-size: 13px;
+    color: #667068;
+}
+
+.assignment-download {
+    color: #315D40;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.empty-message {
+    color: #667068;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 500px) {
+    .assignment-item {
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  padding: 10px 16px;
+  background-color: #8FA77C;
+  color: #26352B;
+  border: 1px solid #8FA77C;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: translateY(-2px);
+}
+
+body,
+body * {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light-mode {
+  background-color: #F7F4EE;
+  color: #2F3A32;
+}
+
+body.light-mode .hero {
+  background-color: #E7EDE3;
+  color: #2F3A32;
+}
+
+body.light-mode .hero h1,
+body.light-mode h2,
+body.light-mode h3 {
+  color: #2F3A32;
+}
+
+body.light-mode .hero-role,
+body.light-mode .hero-intro,
+body.light-mode .section-label,
+body.light-mode .eyebrow,
+body.light-mode .eyebrown {
+  color: #526346;
+}
+
+body.light-mode #about p,
+body.light-mode .projects-description,
+body.light-mode .project-card p,
+body.light-mode #skills li span,
+body.light-mode .contact p {
+  color: #667068;
+}
+
+body.light-mode #skills li,
+body.light-mode .project-card,
+body.light-mode .contact {
+  background-color: #FFFFFF;
+  color: #2F3A32;
+  border-color: #D7E0D1;
+}
+
+body.light-mode .hero-buttons a + a {
+  color: #526346;
+}
+
+body.light-mode .contact-link a,
+body.light-mode .contact-links a {
+  color: #2F3A32;
+}
+
+body.light-mode footer {
+  color: #667068;
+}
+
+body.light-mode .scroll-down {
+  color: #526346;
+}
+
+/* Dark Mode - Black & White */
+
+body:not(.light-mode) {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+body:not(.light-mode) .hero,
+body:not(.light-mode) .contact {
+  background-color: #111111;
+  color: #FFFFFF;
+  border-color: #333333;
+}
+
+body:not(.light-mode) h1,
+body:not(.light-mode) h2,
+body:not(.light-mode) h3 {
+  color: #FFFFFF;
+}
+
+body:not(.light-mode) p,
+body:not(.light-mode) .hero-role,
+body:not(.light-mode) .hero-intro,
+body:not(.light-mode) .section-label,
+body:not(.light-mode) .eyebrow,
+body:not(.light-mode) .eyebrown,
+body:not(.light-mode) footer {
+  color: #D0D0D0;
+}
+
+body:not(.light-mode) #skills li,
+body:not(.light-mode) .project-card {
+  background-color: #111111;
+  color: #FFFFFF;
+  border: 1px solid #333333;
+}
+
+body:not(.light-mode) a {
+  color: #FFFFFF;
+}
+
+body:not(.light-mode) .theme-toggle {
+  background-color: #FFFFFF;
+  color: #000000;
+  border: 1px solid #FFFFFF;
+}
+
+body:not(.light-mode) .hero-buttons a + a {
+  color: #FFFFFF;
+}
+
+body:not(.light-mode) .scroll-down,
+body:not(.light-mode) .contact-link a,
+body:not(.light-mode) .contact-links a {
+  color: #FFFFFF;
+}
+
+body:not(.light-mode) {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+body:not(.light-mode) .hero,
+body:not(.light-mode) .contact,
+body:not(.light-mode) .upload-box {
+    background-color: #111111;
+    color: #FFFFFF;
+    border-color: #333333;
+}
+
+body:not(.light-mode) h1,
+body:not(.light-mode) h2,
+body:not(.light-mode) h3,
+body:not(.light-mode) strong {
+    color: #FFFFFF;
+}
+
+body:not(.light-mode) p,
+body:not(.light-mode) .section-label,
+body:not(.light-mode) .eyebrow,
+body:not(.light-mode) .assignments-description,
+body:not(.light-mode) .empty-message,
+body:not(.light-mode) footer {
+    color: #CCCCCC;
+}
+
+body:not(.light-mode) #skills li,
+body:not(.light-mode) .project-card,
+body:not(.light-mode) .assignment-item {
+    background-color: #111111;
+    color: #FFFFFF;
+    border: 1px solid #333333;
+    box-shadow: none;
+}
+
+body:not(.light-mode) #skills li strong,
+body:not(.light-mode) .assignment-info h3 {
+    color: #FFFFFF;
+}
+
+body:not(.light-mode) #skills li span,
+body:not(.light-mode) .project-card p,
+body:not(.light-mode) .assignment-info p {
+    color: #CCCCCC;
+}
+body:not(.light-mode) .upload-button {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+body:not(.light-mode) .upload-button:hover {
+    background-color: #DDDDDD;
+    color: #000000;
+}
+
+body:not(.light-mode) .assignment-download,
+body:not(.light-mode) .contact-links a,
+body:not(.light-mode) .hero-buttons a + a,
+body:not(.light-mode) .scroll-down {
+    color: #FFFFFF;
+}
+
+body:not(.light-mode) .assignment-download,
+body:not(.light-mode) .contact-links a {
+    border-color: #FFFFFF;
+}
+body:not(.light-mode) .theme-toggle {
+    background-color: #FFFFFF;
+    color: #000000;
+    border-color: #FFFFFF;
+}
+
+body,
+body * {
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+body:not(.light-mode) #about p {
+    color: #E0E0E0;
+    line-height: 1.8;
+}
+
+body:not(.light-mode) #about h2 {
+    color: #FFFFFF;
+}

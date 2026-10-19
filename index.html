@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+     <title>Fatma's Portfolio</title>
+     <link rel="stylesheet" href="style.css">
+    
+    </head>
+    <body>
+    <button id="theme-button" class="theme-toggle">
+    ☀️ Light Mode
+</button>
+    <main>
+    <section class="hero" id="home">
+    <p class="hero-intro">HI, I'M</p>
+
+    <h1>Fatma El-Moataz</h1>
+
+    <p class="hero-role">Software Engineering Student</p>
+
+    <p>
+        I am a Software Engineering student passionate about
+        technology and web development.
+        Where code meets creativity, I build experiences for the web.
+    </p>
+
+    <div class="hero-buttons">
+        <a href="#projects">View My Work ↗</a>
+        <a href="#contact">Contact Me</a>
+    </div>
+
+    <a href="#about" class="scroll-down">
+        SCROLL TO EXPLORE ↓
+    </a>
+</section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a Software Engineering student interested in web development.
+           I enjoy learning new technologies and creating projects that turn ideas into useful experiences.</p>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>
+                <strong>C++</strong>
+               <span>Problem Solving</span>
+            </li>
+            <li>
+              <strong>HTML</strong>
+              <span>Building web page structure</span>
+            </li>
+            <li>
+                <strong>CSS</strong>
+                <span>styling web pages</span>
+            </li>
+            <li>
+                <strong>JavaScript</strong>
+                <span>Adding interactivity</span>
+            </li>
+        </ul>
+    </section>
+    <section id="projects">
+        <p class="section-label">MY WORK</p>
+        <h2>My Project</h2>
+        <p class="projects-description">
+            A collection of web projects I created while learning web development. </p>
+        <div class="project-card">
+            <h3>Elora Fashion</h3>
+            <p>A fashion store website featuring seasonal collections,
+               product categories, featured products, and a contact form.</p>
+            <a href="https://fatmaalmoataz00-prog.github.io/My-website/"  target="_blank">View Project</a>   
+        </div>
+    </section>
+    <section id="assignments">
+         <p class="section-label">MY UNIVERSITY WORK</p>
+         <h2>My assignments</h2>
+         <p class="assignments-description">A collection of my university assignments and coursework.</p>
+         <div class="upload-box">
+            <label for="assignmentFile" class="upload-button">+ Upload Assignment</label>
+             <input
+            type="file"
+            id="assignmentFile"
+            accept=".pdf,.doc,.docx,.ppt,.pptx,.zip,.cpp,.txt"
+            hidden>
+            <p>Choose a file from your device to add it to the list.</p>
+         </div>
+            <div id="assignmentsList" class="assignments-list">
+            <p class="empty-message">No assignments added yet.</p>
+         </div>
+    </section>
+    <section class="contact" id="contact">
+        <p class="eyebrown">CONTACT</p>
+        <h2>Let’s create something <em>great.</em></h2>
+        <p>Want to get in touch? Send me an email or find me through my social links.</p>
+        <div class="contact-link">
+            <a href="mailto:famaalmoataz00@gmail.com">Email ↗</a>
+             <a href="#" title="">LinkedIn ↗</a>
+             <a href="https://github.com/fatmaalmoataz00-prog" target="_blank">GitHub ↗</a>
+        </div>
+    </section>
+    </main>
+    <footer>
+        <p>© 2026 Fatma El-Moataz. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    </body>
+</html>
